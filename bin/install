@@ -30,7 +30,7 @@ get_arch() {
 get_download_url() {
   local version="$1"
   local platform="$(get_arch)"
-  echo "https://github.com/k14s/vendir/releases/download/v${version}/vendir1-${platform}-amd64"
+  echo "https://github.com/k14s/vendir/releases/download/v${version}/vendir-${platform}-amd64"
 }
 
 install_vendir $ASDF_INSTALL_TYPE $ASDF_INSTALL_VERSION $ASDF_INSTALL_PATH
